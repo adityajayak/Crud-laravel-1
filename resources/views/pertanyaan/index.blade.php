@@ -12,7 +12,7 @@
                 @foreach ($pertanyaan as $key => $pertanyaan)
             <tr>
             <td> {{ $key + 1}} </td> 
-            <td> {{ $pertanyaan->Judul }}</td>   
+            <td> {{ $pertanyaan->judul }}</td>   
             <td> {{ $pertanyaan->isi }}</td>   
             </tr>                  
              @endforeach
