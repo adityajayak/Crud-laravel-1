@@ -19,13 +19,9 @@ class PertanyaanController extends Controller
         return view('pertanyaan.form');
     }
 
-    public function sav(Request $request)
+    public function store(Request $request)
     {
-        $data = $request->all();
-        unset($data["_token"]);
-        $pertanyaan = PertanyaanModel::save($data);
-        if ($pertanyaan) {
-            return view('pertanyaan');
-        }
+        $new_pertanyaan = PertanyaanModel::save($request->all());
+        return redirect('/pertanyaan');
     }
 }
