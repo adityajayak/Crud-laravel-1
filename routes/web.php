@@ -16,4 +16,4 @@ Route::get('/', function () {
 });
 Route::get('/pertanyaan', 'PertanyaanController@index');
 Route::get('/create', 'PertanyaanController@create');
-Route::post('/pertanyaan', 'PertanyaanController@sav');
+Route::post('/pertanyaan', 'PertanyaanController@store');
