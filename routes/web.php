@@ -12,8 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('/welcome');
 });
-Route::get('/pertanyaan', 'PertanyaanController@index');
-Route::get('/create', 'PertanyaanController@create');
-Route::post('/pertanyaan', 'PertanyaanController@sav');
+Route::get('/pertanyaan', 'PertanyaanController@index'); //menampilkan home
+Route::get('/create', 'PertanyaanController@create'); //menampilkan halaman form
+Route::post('/pertanyaan', 'PertanyaanController@store'); //menampilkan data 
+Route::get('/pertanyaan/{id}', 'PertanyaanController@answ'); //menampilkan form jawab
+Route::get('/make', 'PenjawabController@make'); //menampilkan halaman form
+Route::get('/penjawab', 'PenjawabController@indeks'); //menampilkan jawaban
+Route::post('/penjawab', 'PenjawabController@storej'); //menampilkan data 
