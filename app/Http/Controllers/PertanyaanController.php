@@ -23,10 +23,13 @@ class PertanyaanController extends Controller
     {
         $new_pertanyaan = PertanyaanModel::save($request->all());
         return redirect('/pertanyaan');
+<<<<<<< HEAD
     }
     public function answ($id)
     {
         $pertanyaan = PertanyaanModel::find_by_id($id);
         return view('pertanyaan.answ', compact('pertanyaan'));
+=======
+>>>>>>> f4aeb781d03f7c0b64938ce81efe42ed7fca6d14
     }
 }

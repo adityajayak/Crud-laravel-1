@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @extends('adminlte.master')
 @section('content')
 <div class="ml-2 ">
@@ -24,4 +25,26 @@
            </tbody>
                 </table>
 </div>               
+=======
+@extends('adminlte.master')
+@section('content')
+            <table class="table">
+            <thead>
+                <tr>
+                <th>ID</th>
+                <th>Judul Pertanyaan</th>
+                <th>Isi Pertanyaan</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($pertanyaan as $key => $pertanyaan)
+            <tr>
+            <td> {{ $key + 1}} </td> 
+            <td> {{ $pertanyaan->judul }}</td>   
+            <td> {{ $pertanyaan->isi }}</td>   
+            </tr>                  
+             @endforeach
+           </tbody>
+                </table>
+>>>>>>> f4aeb781d03f7c0b64938ce81efe42ed7fca6d14
 @endsection
