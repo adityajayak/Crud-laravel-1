@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @extends('adminlte.master')
 
 @section('content')
@@ -46,7 +46,7 @@
                 </div>
 </div>
 
-=======
+
 @extends('adminlte.master')
 
 @section('content')
@@ -94,5 +94,5 @@
                 </div>
 </div>
 
->>>>>>> 4990bcfdb0cb083356130da2df2fc9c9dedf69c2
+
 @endsection

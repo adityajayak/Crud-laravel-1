@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @extends('adminlte.master')
 
 @section('content')
@@ -24,7 +24,7 @@
 </div>
 </div>
 </div>
-=======
+
 @extends('adminlte.master')
 
 @section('content')
@@ -42,5 +42,5 @@
       <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>
->>>>>>> f4aeb781d03f7c0b64938ce81efe42ed7fca6d14
+
 @endsection

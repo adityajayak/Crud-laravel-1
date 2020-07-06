@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @extends('adminlte.master')
 @section('content')
 <div class="ml-2 ">
@@ -25,7 +25,7 @@
            </tbody>
                 </table>
 </div>               
-=======
+
 @extends('adminlte.master')
 @section('content')
             <table class="table">
@@ -46,5 +46,5 @@
              @endforeach
            </tbody>
                 </table>
->>>>>>> f4aeb781d03f7c0b64938ce81efe42ed7fca6d14
+
 @endsection
